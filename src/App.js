@@ -6,9 +6,9 @@ function App() {
 
   async function getPeopleInSpace() {
     const response = await fetch("http://api.open-notify.org/astros.json");
-    const dataOfPeopleInSpace = await response.json();
+    const data = await response.json();
 
-    return dataOfPeopleInSpace;
+    return data;
   }
 
   React.useEffect(() => {
